@@ -4,8 +4,42 @@
     background-color: #000000;
 }
 
+#lista-topo{
+  margin-left: 22%;
+}
+ul li#selected{
 
+}
+ul li#selected,ul#lista-topo li:active {
+  color: blue!important;
+  border-bottom: 3px solid blue;
+}
 
+ul#lista-topo li a:hover,ul#sobre-topo li a:hover{
+  color: blue;
+}
+
+ul#lista-topo li{
+  padding: 0 8px 18px 8px;
+  
+}
+
+div#banner{
+  width: 100%;
+
+  background: url(imagens/banner-fifa.png) top no-repeat;
+  margin: 30px 0px;
+  background-size: 100%;
+  min-height: 400px;  
+  
+}
+
+@media screen and (max-width:700px) {
+  div#banner{
+    background-size: 140%;
+    min-height: 200px;
+  }
+}
 
 @media screen and (max-width: 600px) {
     div#tarja {
