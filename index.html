@@ -114,7 +114,7 @@
                   
                 <ul id="lista-topo" class="navbar-nav">
                     <li class="nav-item" id="selected">
-                      <a class="nav-link" href="#">Novidades</a>
+                      <a class="nav-link selected" href="#">Novidades</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Coleções</a>
@@ -131,31 +131,78 @@
           </nav>
     </div>
 <main>
-  <div id="principal" class="container-fluid text-center">
+  <div id="principal" class="container-fluid my-3">
     <div class="row">
 
       <div id="banner" class="col-12">
         
       </div>
-
-
+      <div class="sub-banner">
+        <h2 class="float-start clearboth">FIFA 22</h2>
+        <p class="my-1 clearboth">Powered by Football</p>
+        <a href="#" class="btn btn-primary btn-sm float-lg-end float-start">Já Disponível</a>
+        
+        
+    
+      </div>
+      
 
     </div>
   </div>
-
-      <div id="grid-jogos" class="container my-0">
+  
+<!-- 
+      <div id="grid-jogos" class="container">
         <div class="row">
-      <div class="col-md-6 ">
-        <p>teste</p>
-      </div>
-      <div class="col-md-6">
-        <p>teste</p>
-      </div>
+         
+          <div class="col-sm-4 card-jogo">
+            <img src="imagens/gran-turismo.jpg" class="img-fluid" width="300">
+          </div>
+          <div class="col-sm-4 card-jogo">
+            <img src="imagens/skyrim.jpg" class="img-fluid" width="300">
+          </div>
+          <div class="col-sm-4 card-jogo">
+            <img src="imagens/skyrim.jpg" class="img-fluid" width="300">
+          </div>
+     
+        
+      </div> -->
     </div>
+ 
+   
+    <div class="container-fluid mt-4" id="grid-jogos">
+      <div class="row">
+        <div class="col-sm-4 card-jogo">
+          <img src="imagens/gran-turismo.jpg"  >
+        </div>
+        <div class="col-sm-4 card-jogo">
+          <img src="imagens/skyrim.jpg"  >
+        </div>
+        <div class="col-sm-4 card-jogo">
+          <img src="imagens/cod-vanguard.jpg" >
+        </div>
+        <div class="col-sm-4 card-jogo">
+          <img src="imagens/kena.jpg" >
+        </div>
+        <div class="col-sm-4 card-jogo">
+          <img src="imagens/stranger-of-paradise.jpg" >
+        </div>
+        <div class="col-sm-4 card-jogo">
+          <img src="imagens/diablo-III.jpg">
+        </div>
+        <div class="col-sm-4 card-jogo" id="mais-jogos" style="display: none;">
+          <img src="imagens/cod-vanguard.jpg" >
+        </div>
+        
+      </div>
+      <div class="text-center">
+        <button id="veja-mais">Mostrar mais</button>
+      </div>
+      
     </div>
     
 
   
 </main>
+<script src="js/js.js"></script>
 </body>
 </html>
