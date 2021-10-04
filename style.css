@@ -54,17 +54,23 @@ div.sub-banner a{
 }
 .card-jogo{
   margin: 10px 0;
+
 }
 .card-jogo img{
   height: auto;
   max-width: 100%;
   border-radius: 10px;
+  box-sizing: border-box;
+  padding: 4px;
 }
 .card-jogo img:hover{
   -webkit-filter:grayscale(30%);
-  
+  filter:grayscale(30%);
+  cursor: pointer;
 }
-
+.card-jogo img:active{
+  border: 2px solid blue;
+}
 button#veja-mais{
 background-color:#ffffff;
 color: blue;
@@ -77,6 +83,28 @@ padding: 5px 10px;
 button#veja-mais:hover{
 background-color:#c5c5c5;
 
+}
+
+.carrousel-item{
+  width: 350px!important;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 0 5px;
+  box-sizing: border-box;
+ 
+}
+
+.carrousel-item:hover{
+  border: 2px solid blue!important;
+  cursor: pointer!important;
+}
+.botao-carousel{
+  font-size: 30px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: rgb(4, 113, 255);
+  border: none;
 }
 
 @media screen and (max-width:700px) {
