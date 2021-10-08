@@ -1,8 +1,122 @@
 
-@font-face {font-family: "SSTW20-Medium"; src: url("SSTW20Medium/SSTW20Medium.ttf")!important;
+@font-face {font-family: "SSTW20-Medium"!important; src: url("SSTW20Medium/SSTW20Medium.ttf")!important;
 }
+@font-face {
+  font-family: 'SST Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Roman'), url('SSTRg.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Condensed'), url('SSTRgCn.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Italic'), url('SSTRgIt.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Light'), url('SSTLight.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Light Italic'), url('SSTLightIt.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Medium'), url('SSTMedium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Condensed Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Condensed Medium'), url('SSTMediumCn.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Medium Italic'), url('SSTMediumIt.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Bold'), url('SSTBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Condensed Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Condensed Bold'), url('SSTBoldCn.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Bold Italic'), url('SSTBoldIt.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Heavy'), url('SSTHeavy.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SST Heavy Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SST Heavy Italic'), url('SSTHeavyIt.woff') format('woff');
+  }
+
+
+body{
+  font-family: "SSTW20-Medium", sans-serif!important;
+}
+h1,h2,h3,h4,h5,h6{
+  color: #363636;
+}
+p{
+  color: #6B6B6B;
+}
+
 nav{
-  color: #757575;
+  color: #A7A7A7;
 }
 main{
   padding: 0 20px;
@@ -15,29 +129,44 @@ main{
     height: 30px;
     background-color: #000000;
 }
+/* LISTA SOBRE A NAV PRINCIPAL */
+#sobre-topo li a{
+  color:#757575;
+  font-size: 11px;
+  font-family: "SST Medium";
+}
+#sobre-topo li a:hover{
+  color:#0070D1;
+}
 
+/* MENU PRINCIPAL */
 #lista-topo{
   margin-left: 22%;
 }
-a.selected{
-  color: #0072CE!important;
+ul#lista-topo li{
+  padding: 0 8px 18px 8px;
+  
+}
+ul#lista-topo li a{
+  color: rgb(75, 75, 75);
+  font-size: 13px;
+  font-family: "SST Medium";
+  
 }
 ul li#selected,ul#lista-topo li:active {
   color: #0072CE!important;
   border-bottom: 3px solid #0172CE;
 }
-
-ul#lista-topo li a:hover,ul#sobre-topo li a:hover{
+a.selected{
+  color: #147ed5!important;
+}
+ul#lista-topo li a:hover{
   color: #0072CE;
 }
 
-ul#lista-topo li{
-  padding: 0 8px 18px 8px;
-  
-}
-/* div#principal{
-  box-shadow: 10px 5px 30px #888888;
-} */
+
+
+/* BANNER */
 div#banner{
   width: 100%;
   z-index: 999;
@@ -47,29 +176,38 @@ div#banner{
   min-height: 400px;  
   
 }
+
+/* SUB-BANNER */
 div.sub-banner {
+  
 padding: 10px;
 margin-top: -20px;
 box-shadow: 0px 8px 27px 6px rgba(107,107,107,0.55);
-z-index: -999;
-}
 
+}
+div.sub-banner h2{
+  font-family: "SST Light";
+  font-size: 22px;
+}
+div.sub-banner p{
+  font-size: 12px;
+}
 div.sub-banner a{
   border-radius: 50px;
-  
+  background: #0072CE;
+  color: #ffffff;
+
+}
+div.sub-banner a:hover{
+  background: #004a87;
+  color: #ffffff;
+
 }
 div.sub-banner a, div.sub-banner h2, div.sub-banner p{
   margin: 10px 15px;
-}
-.botao{
-  background-color: #0172ce;
-  color:#ffffff;
-}
-.botao:hover{
-  background-color: #003e70!important;
-  color: white;
-  
-}
+} */
+
+/* GRID DE JOGOS */
 .card-jogo{
   margin: 10px 0;
 
@@ -96,19 +234,16 @@ border-radius: 20px;
 border: none;
 padding: 5px 10px;
 }
-
-
 button#veja-mais:hover{
-background-color:#c5c5c5;
-
+background-color:#dcdcdc!important;
 }
 
+/* CAROUSEL */
 .carrousel-item{
   width: 300px!important;
   border-radius: 10px;
   padding: 2px;
- 
-  box-sizing: border-box;
+  
  
 }
 
@@ -118,12 +253,28 @@ background-color:#c5c5c5;
   border: 2px solid blue;
 }
 .botao-carousel{
-  font-size: 30px;
+  /* width: 50px;
+  height: 50px;
   color: white;
-  padding: 5px 10px;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: rgb(4, 113, 255);
-  border: none;
+ 
+   */
+   width: 45px;
+   height: 45px;
+   
+  border-radius: 50%;
+  padding: 20px;
+  
+   background-color: rgb(4, 113, 255);
+   position: relative;
+   z-index: 100;
+}
+#anterior-seta{
+  margin-right: -10px;
+}
+#proximo-seta{
+  margin-left: -10px;
 }
 .js-carousel--responsive p{
 margin: 0;
@@ -140,11 +291,10 @@ z-index: -1;
   box-sizing: border-box;
   color: #363636;
 }  
-/*
-.carousel-1{
-  background: url(imagens/e-football2022.png);
-  background-size: contain;
-} */
+
+
+/* MEDIA QUERIES */
+  /* MEDIA BANNER */
 @media screen and (max-width:700px) {
   div#banner{
     background-size: 140%;
@@ -156,8 +306,11 @@ z-index: -1;
     max-width: ;
   }
 } */
+  /* MEDIA TARJA PRETA TOPO */
 @media screen and (max-width: 600px) {
     div#tarja {
       display: none;
     }
   }
+
+
