@@ -1,5 +1,6 @@
-@import url(//db.onlinewebfonts.com/c/6e0aa675bbc1061803aaef4f66550e49?family=SSTW20-Medium);
-@font-face {font-family: "SSTW20-Medium"; src: url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.eot"); src: url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.woff") format("woff"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.svg#SSTW20-Medium") format("svg"); }
+
+@font-face {font-family: "SSTW20-Medium"; src: url("SSTW20Medium/SSTW20Medium.ttf")!important;
+}
 nav{
   color: #757575;
 }
