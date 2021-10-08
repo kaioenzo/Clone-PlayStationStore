@@ -1,5 +1,10 @@
+@import url(//db.onlinewebfonts.com/c/6e0aa675bbc1061803aaef4f66550e49?family=SSTW20-Medium);
+@font-face {font-family: "SSTW20-Medium"; src: url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.eot"); src: url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.woff") format("woff"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6e0aa675bbc1061803aaef4f66550e49.svg#SSTW20-Medium") format("svg"); }
+nav{
+  color: #757575;
+}
 main{
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .clearboth{
   clear: both;
@@ -14,15 +19,15 @@ main{
   margin-left: 22%;
 }
 a.selected{
-  color: blue!important;
+  color: #0072CE!important;
 }
 ul li#selected,ul#lista-topo li:active {
-  color: blue!important;
-  border-bottom: 3px solid blue;
+  color: #0072CE!important;
+  border-bottom: 3px solid #0172CE;
 }
 
 ul#lista-topo li a:hover,ul#sobre-topo li a:hover{
-  color: blue;
+  color: #0072CE;
 }
 
 ul#lista-topo li{
@@ -52,6 +57,18 @@ div.sub-banner a{
   border-radius: 50px;
   
 }
+div.sub-banner a, div.sub-banner h2, div.sub-banner p{
+  margin: 10px 15px;
+}
+.botao{
+  background-color: #0172ce;
+  color:#ffffff;
+}
+.botao:hover{
+  background-color: #003e70!important;
+  color: white;
+  
+}
 .card-jogo{
   margin: 10px 0;
 
@@ -73,7 +90,7 @@ div.sub-banner a{
 }
 button#veja-mais{
 background-color:#ffffff;
-color: blue;
+color: #0072CE;
 border-radius: 20px;
 border: none;
 padding: 5px 10px;
@@ -86,17 +103,18 @@ background-color:#c5c5c5;
 }
 
 .carrousel-item{
-  width: 350px!important;
+  width: 300px!important;
   border-radius: 10px;
   padding: 2px;
-  margin: 0 5px;
+ 
   box-sizing: border-box;
  
 }
 
 .carrousel-item:hover{
-  border: 2px solid blue!important;
+  
   cursor: pointer!important;
+  border: 2px solid blue;
 }
 .botao-carousel{
   font-size: 30px;
@@ -106,7 +124,26 @@ background-color:#c5c5c5;
   background-color: rgb(4, 113, 255);
   border: none;
 }
+.js-carousel--responsive p{
+margin: 0;
+cursor: pointer;
+position: relative;
+z-index: -1;
 
+}
+  .carousel-1, .carousel-2, .carousel-3, .carousel-4,.carousel-5, .carousel-6, .carousel-7, .carousel-8, .carousel-9,.carousel-10, .carousel-11, .carousel-12{
+  width: 350px!important;
+  border-radius: 10px;
+  padding: 2px;
+  margin-left: 0;
+  box-sizing: border-box;
+  color: #363636;
+}  
+/*
+.carousel-1{
+  background: url(imagens/e-football2022.png);
+  background-size: contain;
+} */
 @media screen and (max-width:700px) {
   div#banner{
     background-size: 140%;

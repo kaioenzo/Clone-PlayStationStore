@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novidades| PlayStationStore</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Style custom -->
     <link rel="stylesheet" href="style.css">
-   
+   <!-- Carousel -->
     <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+  <!-- Font -->
+    <link href="//db.onlinewebfonts.com/c/6e0aa675bbc1061803aaef4f66550e49?family=SSTW20-Medium" rel="stylesheet" type="text/css">
 
 </head>
-<body>
+<body onload="escondeSeta()">
     <div id="tarja"></div>
     <div id="sub-nav">
 
@@ -133,7 +137,7 @@
             </div>
           </nav>
     </div>
-<main>
+
   <div id="principal" class="container-fluid my-3">
     <div class="row">
 
@@ -141,9 +145,10 @@
         
       </div>
       <div class="sub-banner">
-        <h2 class="float-start clearboth">FIFA 22</h2>
+        <h2 class="float-start">FIFA 22</h2>
         <p class="my-1 clearboth">Powered by Football</p>
-        <a href="#" class="btn btn-primary btn-sm float-lg-end float-start">Já Disponível</a>
+        <a href="#home" class="botao btn btn-small float-lg-end">Já Disponível</a>
+        
         
         
     
@@ -153,24 +158,7 @@
     </div>
   </div>
   
-<!-- 
-      <div id="grid-jogos" class="container">
-        <div class="row">
-         
-          <div class="col-sm-4 card-jogo">
-            <img src="imagens/gran-turismo.jpg" class="img-fluid" width="300">
-          </div>
-          <div class="col-sm-4 card-jogo">
-            <img src="imagens/skyrim.jpg" class="img-fluid" width="300">
-          </div>
-          <div class="col-sm-4 card-jogo">
-            <img src="imagens/skyrim.jpg" class="img-fluid" width="300">
-          </div>
-     
-        
-      </div> -->
-    </div>
- 
+    <main>
    
     <div class="container-fluid mt-4" id="grid-jogos">
       <div class="row">
@@ -204,28 +192,78 @@
     </div>
     <div class="container-fluid mt-5">
      <h3>Novos Jogos</h3>
+     <button  id="anterior-seta" style="position: relative;left:-1.5%; top :160px; z-index: 100;" class="js-carousel--responsive-prev botao-carousel">T</button>
+     <button id="proximo-seta" style="position: relative; left:94.5%; top :160px; z-index: 100;"class="js-carousel--responsive-next botao-carousel"><span>F</span></button>
         <div class="js-carousel--responsive">
-          <img class="carrousel-item" src="imagens/e-football2022.png" alt="">
-          <img class="carrousel-item" src="imagens/e-football2022.png" alt="">
-          <img class="carrousel-item " src="imagens/fifa-22.png" alt="">
-          <img class="carrousel-item " src="imagens/fifa-22-2.png" alt="">
-         <img class="carrousel-item " src="imagens/death-stranding.png" alt="">
-         <img class="carrousel-item  " src="imagens/fifa-22-3.png" alt="">
-          <img class="carrousel-item " src="imagens/kena.jpg" alt="">
-          <img class="carrousel-item " src="imagens/insurgency.png" alt="">
-          <img class="carrousel-item primeiro-final" src="imagens/diablo-III.jpg" alt="">
-          <img class="carrousel-item " src="imagens/hot-wheels.png" alt="">
-          <img class="carrousel-item " src="imagens/hot-wheels.png" alt="">
-          <img class="carrousel-item " src="imagens/e-football2022.png" alt="">
+          <div class="carousel-1" >
+            <img class="carrousel-item" src="imagens/e-football2022.png" alt="">
+            <p><a>eFootball&trade;2022</a></p>
+            <p><a>Gratuito</a></p>
+          </div>
+          <div class="carousel-2">
+            <img class="carrousel-item" src="imagens/e-football2022.png" alt="">
+            <p><a>eFootball&trade;2022</a></p>
+            <p><a>Gratuito</a></p>
+          </div>
+          <div class="carousel-3">
+            <img class="carrousel-item " src="imagens/fifa-22.png" alt="">
+            <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+          </div>
+          <div class="carousel-4">
+            <img class="carrousel-item " src="imagens/fifa-22-2.png" alt="">
+            <p><a>FIFA 22 para PS5&trade;</a></p>
+            <p><a>R$ 338,90</a></p>
+          </div>
+         <div class="carousel-5">
+          <img class="carrousel-item " src="imagens/death-stranding.png" alt="">
+          <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+         </div>
+         <div class="carousel-6">
+          <img class="carrousel-item  " src="imagens/fifa-22-3.png" alt="">
+          <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+         </div>
+          <div class="carousel-7">
+            <img class="carrousel-item " src="imagens/kena.jpg" alt="">
+            <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+          </div>
+          <div class="carousel-8">
+            <img class="carrousel-item " src="imagens/insurgency.png" alt="">
+            <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+          </div>
+          <div class="carousel-9">
+            <img class="carrousel-item primeiro-final" src="imagens/diablo-III.jpg" alt="">
+            <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+          </div>
+          <div class="carousel-10">
+            <img class="carrousel-item " src="imagens/hot-wheels.png" alt="">
+            <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+          </div>
+          <div class="carousel-11">
+            <img class="carrousel-item " src="imagens/hot-wheels.png" alt="">
+            <p><a>FIFA 22 para PS4&trade;</a></p>
+            <p><a>R$ 298,90</a></p>
+          </div>
+          <div class="carousel-12">
+            <h6><a href="">Visualizar mais</a></h6>
+            
+          </div>
           
         </div>
+        
       </div>
-
+      
     </div>
 
     
-    <button class="js-carousel--responsive-prev botao-carousel"><span><</span></button>
-    <button class="js-carousel--responsive-next botao-carousel"><span>></span></button>
+    
+    
     
   
 </main>
@@ -240,7 +278,7 @@
 new Glider($responsiveCarousel, {
   slidesToShow: 2,
   slidesToScroll: 2,
-  draggable: true,
+  draggable: false,
   dots: ".js-carousel--responsive-dots",
   arrows: {
     prev: ".js-carousel--responsive-prev",
@@ -270,6 +308,26 @@ new Glider($responsiveCarousel, {
     },
   ],
 });
+function escondeSeta(){
+  var dots = 0;
+  document.getElementById("anterior-seta").style['visibility']=["hidden"];
+
+  document.getElementById("proximo-seta").onclick = function() {
+  document.getElementById("anterior-seta").style['visibility']=["visible"];
+  var dots = 1;
+  console.log(dots)
+  
+  
+}
+}
+document.getElementById("anterior-seta").onclick = function(){
+    var dots= 0;
+    console.log(dots)
+  }
+  if (dots<=1){
+  document.getElementById("anterior-seta").style['visibility']=["hidden"];
+}
+
 </script>
 </body>
 </html>
