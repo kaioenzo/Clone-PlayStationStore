@@ -24,7 +24,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <div class="container-fluid align-items-lg-baseline">
-                  <a class="navbar-brand mx-lg-2 mt-0" href="#"><img src="imagens/playstation-logo.png" alt="" width="30" height="20"></a>
+                  <a class="navbar-brand mx-lg-2 mt-0" href="#"><img src="imagens/playstation-logo-azul.png" alt="" width="30" height="20"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -607,8 +607,7 @@ document.getElementById("proximo-seta-2").onclick = function() {
       
     document.getElementById("anterior-seta-2").onclick = function() {
   x--;
-        // if(x==1){
-        //   document.getElementById("anterior-seta").style['visibility']=["hidden"];
+        
           
         
         console.log(x)  
@@ -618,32 +617,40 @@ document.getElementById("proximo-seta-2").onclick = function() {
         document.getElementById("anterior-seta-2").style['visibility']=["hidden"];
       }}, 100);
 
-      window.addEventListener("scroll", function (event) {
+     
+
+
+  if (dots<=1){
+  document.getElementById("anterior-seta").style['visibility']=["hidden"];
+}
+
+
+
+</script>
+<script>
+   window.addEventListener("scroll", function (event) {
     var scroll = this.scrollY;
     var original = document.getElementById("navbar").innerHTML
-    console.log(scroll)
-    if (scroll>64) {
+    
+    if (scroll>20) {
       document.getElementById("navbar").style['position']=["fixed"]
       document.getElementById("navbar").style['top']=["0"]
       document.getElementById("navbar").style['right']=["0"]
       document.getElementById("navbar").style['left']=["0"]
       document.getElementById("navbar").style['z-index']=["999"]
       document.getElementById("navbar").style['background']=["#ffffff"]
-      
+      var scrollNovo = this.scrollY;
+    
+
 ;    }
-      if (scroll<64) {
-      document.getElementsByTagName
+      if (scroll<20) {
+        document.getElementById("navbar").style['position']=["relative"]
+        document.getElementById("navbar").style['display']=["flex"]
+        
       
       }
 });
-
-
-//   if (dots<=1){
-//   document.getElementById("anterior-seta").style['visibility']=["hidden"];
-// }
-
 </script>
-
 
  
 
