@@ -116,7 +116,9 @@ h1,h2,h3,h4,h5,h6{
 p{
   color: #6B6B6B;
 }
-
+a{
+  text-decoration: none!important;
+}
 nav{
   color: #A7A7A7;
 }
@@ -169,7 +171,11 @@ a.selected{
 ul#lista-topo li a:hover{
   color: #0072CE;
 }
-
+.navbar-toggler a{
+  color: #363636!important;
+  font-size: 0.9em!important;
+  font-family: 'SST Medium';
+}
 
 /* BANNER */
 div#banner{
