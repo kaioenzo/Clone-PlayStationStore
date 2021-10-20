@@ -1,11 +1,11 @@
 
-@font-face {font-family: "SSTW20-Medium"!important; src: url("SSTW20Medium/SSTW20Medium.ttf")!important;
+@font-face {font-family: "SSTW20-Medium"!important; src: url("fonts/SSTW20Medium/SSTW20Medium.ttf")!important;
 }
 @font-face {
   font-family: 'SST Roman';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Roman'), url('SSTRg.woff') format('woff');
+  src: local('SST Roman'), url('fonts/SSTRg.woff') format('woff');
   }
   
 
@@ -13,7 +13,7 @@
   font-family: 'SST Condensed';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Condensed'), url('SSTRgCn.woff') format('woff');
+  src: local('SST Condensed'), url('fonts/SSTRgCn.woff') format('woff');
   }
   
 
@@ -21,7 +21,7 @@
   font-family: 'SST Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Italic'), url('SSTRgIt.woff') format('woff');
+  src: local('SST Italic'), url('fonts/SSTRgIt.woff') format('woff');
   }
   
 
@@ -29,7 +29,7 @@
   font-family: 'SST Light';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Light'), url('SSTLight.woff') format('woff');
+  src: local('SST Light'), url('fonts/SSTLight.woff') format('woff');
   }
   
 
@@ -37,7 +37,7 @@
   font-family: 'SST Light Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Light Italic'), url('SSTLightIt.woff') format('woff');
+  src: local('SST Light Italic'), url('fonts/SSTLightIt.woff') format('woff');
   }
   
 
@@ -45,7 +45,7 @@
   font-family: 'SST Medium';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Medium'), url('SSTMedium.woff') format('woff');
+  src: local('SST Medium'), url('fonts/SSTMedium.woff') format('woff');
   }
   
 
@@ -53,7 +53,7 @@
   font-family: 'SST Condensed Medium';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Condensed Medium'), url('SSTMediumCn.woff') format('woff');
+  src: local('SST Condensed Medium'), url('fonts/SSTMediumCn.woff') format('woff');
   }
   
 
@@ -61,7 +61,7 @@
   font-family: 'SST Medium Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Medium Italic'), url('SSTMediumIt.woff') format('woff');
+  src: local('SST Medium Italic'), url('fonts/SSTMediumIt.woff') format('woff');
   }
   
 
@@ -69,7 +69,7 @@
   font-family: 'SST Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Bold'), url('SSTBold.woff') format('woff');
+  src: local('SST Bold'), url('fonts/SSTBold.woff') format('woff');
   }
   
 
@@ -77,7 +77,7 @@
   font-family: 'SST Condensed Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Condensed Bold'), url('SSTBoldCn.woff') format('woff');
+  src: local('SST Condensed Bold'), url('fonts/SSTBoldCn.woff') format('woff');
   }
   
 
@@ -85,7 +85,7 @@
   font-family: 'SST Bold Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Bold Italic'), url('SSTBoldIt.woff') format('woff');
+  src: local('SST Bold Italic'), url('fonts/SSTBoldIt.woff') format('woff');
   }
   
 
@@ -93,7 +93,7 @@
   font-family: 'SST Heavy';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Heavy'), url('SSTHeavy.woff') format('woff');
+  src: local('SST Heavy'), url('fonts/SSTHeavy.woff') format('woff');
   }
   
 
@@ -101,15 +101,17 @@
   font-family: 'SST Heavy Italic';
   font-style: normal;
   font-weight: normal;
-  src: local('SST Heavy Italic'), url('SSTHeavyIt.woff') format('woff');
+  src: local('SST Heavy Italic'), url('fonts/SSTHeavyIt.woff') format('woff');
   }
 
 
 body{
   font-family: "SSTW20-Medium", sans-serif!important;
+  background-color: #000000;
 }
 h1,h2,h3,h4,h5,h6{
   color: #363636;
+  font-family:  "SSTW20-Medium", sans-serif!important;
 }
 p{
   color: #6B6B6B;
@@ -118,9 +120,7 @@ p{
 nav{
   color: #A7A7A7;
 }
-main{
-  padding: 0 20px;
-}
+
 .clearboth{
   clear: both;
 }
@@ -165,11 +165,16 @@ ul#lista-topo li a:hover{
 }
 
 
+/* Article 1 */
+/* article{
+  margin: 10px 30px;
+} */
+
 
 /* BANNER */
 div#banner{
   width: 100%;
-  z-index: 999;
+  z-index: 99;
   background: url(imagens/banner-fifa.png) top no-repeat;
   margin: 30px 0 0 0;
   background-size: 100%;
@@ -177,11 +182,11 @@ div#banner{
   
 }
 
-/* SUB-BANNER */
+/* SUB-BANNER 1*/
 div.sub-banner {
-  
+margin-top: -20px; 
 padding: 10px;
-margin-top: -20px;
+
 box-shadow: 0px 8px 27px 6px rgba(107,107,107,0.55);
 
 }
@@ -205,8 +210,36 @@ div.sub-banner a:hover{
 }
 div.sub-banner a, div.sub-banner h2, div.sub-banner p{
   margin: 10px 15px;
-} */
+}
 
+/* SUB-BANNER 2 */
+div.sub-banner-2 {
+  padding: 10px;
+  height: 160px;
+  box-shadow: 0px 8px 27px 6px rgba(107,107,107,0.55);
+  
+  }
+  div.sub-banner-2 h2{
+    font-family: "SST Light";
+    font-size: 22px;
+  }
+  div.sub-banner-2 p{
+    font-size: 12px;
+  }
+  div.sub-banner-2 a{
+    border-radius: 50px;
+    background: #0072CE;
+    color: #ffffff;
+  
+  }
+  div.sub-banner-2 a:hover{
+    background: #004a87;
+    color: #ffffff;
+  
+  }
+  div.sub-banner-2 a, div.sub-banner-2 h2, div.sub-banner-2 p{
+    margin: 10px 15px;
+  }
 /* GRID DE JOGOS */
 .card-jogo{
   margin: 10px 0;
@@ -227,24 +260,23 @@ div.sub-banner a, div.sub-banner h2, div.sub-banner p{
 .card-jogo img:active{
   border: 2px solid blue;
 }
-button#veja-mais{
+button.veja-mais{
 background-color:#ffffff;
 color: #0072CE;
 border-radius: 20px;
 border: none;
 padding: 5px 10px;
 }
-button#veja-mais:hover{
+button.veja-mais:hover{
 background-color:#dcdcdc!important;
 }
 
 /* CAROUSEL */
+
 .carrousel-item{
   width: 300px!important;
   border-radius: 10px;
   padding: 2px;
-  
- 
 }
 
 .carrousel-item:hover{
@@ -253,13 +285,6 @@ background-color:#dcdcdc!important;
   border: 2px solid blue;
 }
 .botao-carousel{
-  /* width: 50px;
-  height: 50px;
-  color: white;
-  border-radius: 50%;
-  background-color: rgb(4, 113, 255);
- 
-   */
    width: 45px;
    height: 45px;
    
@@ -270,10 +295,11 @@ background-color:#dcdcdc!important;
    position: relative;
    z-index: 100;
 }
-#anterior-seta{
+
+#anterior-seta,#anterior-seta-2{
   margin-right: -10px;
 }
-#proximo-seta{
+#proximo-seta, #proximo-seta-2{
   margin-left: -10px;
 }
 .js-carousel--responsive p{
@@ -290,10 +316,27 @@ z-index: -1;
   margin-left: 0;
   box-sizing: border-box;
   color: #363636;
+  display: block;
 }  
 
+#carousel-2{
+  margin-top: 120px;
+}
+
+/* BANNER 2 */
+div#banner-2{
+  background: url(imagens/background-banner-2.jpg) right center ;
+  max-height: 410px;
+}
+
+div#banner-2 img{
+
+margin: 0 0;
+width: 350px;
+}
 
 /* MEDIA QUERIES */
+
   /* MEDIA BANNER */
 @media screen and (max-width:700px) {
   div#banner{
@@ -301,15 +344,17 @@ z-index: -1;
     min-height: 200px;
   }
 }
-/* @media  screen and (max-width:480px) {
-  .card-jogo img{
-    max-width: ;
-  }
-} */
+
   /* MEDIA TARJA PRETA TOPO */
 @media screen and (max-width: 600px) {
     div#tarja {
       display: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    div#banner-2 img {
+      max-width: 130px;
     }
   }
 
