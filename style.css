@@ -129,6 +129,12 @@ nav{
     height: 30px;
     background-color: #000000;
 }
+#tarja-preta-footer{
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    display: none;
+}
 /* LISTA SOBRE A NAV PRINCIPAL */
 #sobre-topo li a{
   color:#757575;
@@ -163,12 +169,6 @@ a.selected{
 ul#lista-topo li a:hover{
   color: #0072CE;
 }
-
-
-/* Article 1 */
-/* article{
-  margin: 10px 30px;
-} */
 
 
 /* BANNER */
@@ -335,27 +335,106 @@ margin: 0 0;
 width: 350px;
 }
 
+
+/* FOOTER */
+footer{
+  background: #00439C;
+  padding: 95px 160px;
+ 
+  font-family: "SST Medium", sans-serif;
+  
+}
+.footer-logo{
+  margin-left: 30px;
+}
+footer p{
+  color: #ffffff;
+}
+footer ul{
+  list-style: none;
+  
+}
+footer ul li{
+  margin-top: 8px;
+}
+footer ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  
+}
+footer ul li a:hover{
+  color: #7599C8;
+  
+}
+footer h5{
+  color: #ffffff;
+  font-size: 0.85em;
+}
+#mundo{
+  margin: 0 20px 0 60px;
+}
+
 /* MEDIA QUERIES */
 
-  /* MEDIA BANNER */
-@media screen and (max-width:700px) {
+  
+@media screen and (max-width:400px) {
+  /* MEDIA BANNER 2 */
+  div#banner-2 img {
+    width: 120px!important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+     /* MEDIA TARJA PRETA TOPO */
+    div#tarja {
+    display: none;
+    }
+    /* MEDIA BANNER */
   div#banner{
     background-size: 140%;
     min-height: 200px;
   }
-}
 
-  /* MEDIA TARJA PRETA TOPO */
-@media screen and (max-width: 600px) {
-    div#tarja {
-      display: none;
-    }
-  }
-
-@media screen and (max-width: 600px) {
+    /* MEDIA BANNER 2 */
     div#banner-2 img {
-      max-width: 130px;
+      width: 200px;
+    }
+
+    /* MEDIA FOOTER */
+    footer {
+      padding: 40px 0;
+      font-size: 0.6em;
+    }
+   .footer-logo{
+    margin:0 0;
+    
+   }
+   #logo-footer{
+     display: block;
+     margin: 0 auto
+     ;
+   }
+   #mundo{
+     margin: 25px 20px;
+     display: inline-block;
+    
+   }
+   p{
+    font-size: 14px;
+   }
+   #tarja-preta-footer{
+     display: block;
+   }
+  }
+
+@media screen and (max-width: 900px) {
+    div#banner-2 img {
+      width: 180px;
     }
   }
+
+
 
 
