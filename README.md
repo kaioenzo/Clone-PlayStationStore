@@ -14,7 +14,7 @@ Praticar técnicas de WebDesign responsivo baseado em mobile first. O layout ori
       </figure>
 <h1>👷Como visualizar?</h1>
 <p>
-#Abra o link onde o projeto está hospedado: https://kaioenzo.github.io/pstore.github.io/
+#Abra o link onde o projeto está hospedado: https://kaioenzo.github.io/Clone-PlayStationStore/
  </p>
 <h1><strong>Autor</strong></h1>
 <a href="https://github.com/kaioenzo/"<p>💥Kaio Enzo</p>
