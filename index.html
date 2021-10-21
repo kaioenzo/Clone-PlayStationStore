@@ -18,7 +18,7 @@
     
 
 </head>
-<body onload="escondeSeta()">
+<body onload="escondeSeta()" onload="escondeSeta2()">
     <div id="tarja"></div>
     <div id="sub-nav">
 
@@ -48,7 +48,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Hardware
                         </a>
-                        <div style="z-index: 100!important;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <ul class="navbar-nav ">
                                 <li><a class="dropdown-item" href="#">PS5</a></li>
                                 <li><a class="dropdown-item" href="#"> PS4</a></li>
@@ -144,7 +144,16 @@
   <div id="principal" class="container-fluid my-3">
     <div class="row">
 
-      <div id="banner" class="col-12">
+      <div id="banner-1" class="col-12 d-flex flex-row text-center justify-content-center align-content-center">
+
+  
+        <img src="imagens/fifa22.png" alt="" class="img-fluid">
+     
+    
+        <img src="imagens/mbappe.png" alt="" class="img-fluid">
+      
+    </div>
+    </div>
         
       </div>
       <div class="sub-banner">
@@ -205,7 +214,7 @@
 <div class="text-center float-end">
  <button class="veja-mais">Visualizar tudo</button>
 </div>
-
+</article>
 
 <div class="container-fluid mt-5">
   <div class="flex align-items-center" style="display:flex;">
@@ -281,12 +290,13 @@
    </div>
 <!--  FIM carrousel 1 -->
 
-
+<article>
 
 <div style="margin-top: 80px;"><h4 class="float-start">Pré-venda</h4>
 <div class="text-center float-end">
   <button class="veja-mais">Visualizar tudo</button>
  </div></div>
+</article>
 <div class="container-fluid" id="carousel-2">
   <div class="flex align-items-center" style="display:flex;">
   <div id="anterior-seta-2"class="js-carousel--responsive-prev-2 botao-carousel">	</div>
@@ -361,7 +371,7 @@
    </div>
 
 
-  </article>
+ 
 
  <div id="banner-2" class="col-12 d-flex flex-row text-center justify-content-center align-content-center">
 
@@ -386,7 +396,7 @@
 </div>  
 
 <!-- GRID CATEGORIAS -->
-
+<article>
 
 <div class="container-fluid mt-5 " class="grid-jogos">
   <h3 class="text-center">Veja mais</h3>
@@ -419,7 +429,7 @@
   </div>
   
 </div>
-
+</article>
 <!-- FIM GRID CATEGORIAS -->
 
 
@@ -520,6 +530,7 @@ new Glider($responsiveCarousel, {
 });
 function escondeSeta(){
   document.getElementById("anterior-seta").style['visibility']=["hidden"];
+  
 }
 x=0;
 document.getElementById("proximo-seta").onclick = function() {
@@ -591,14 +602,16 @@ new Glider($responsiveCarousel2, {
     },
   ],
 });
-function escondeSeta(){
+function escondeSeta2(){
   document.getElementById("anterior-seta-2").style['visibility']=["hidden"];
+  document.getElementById("anterior-seta-2").style['background']=["url('imagens/seta-esquerda.png') center no-repeat #0070D1"];
 }
 x=0;
 document.getElementById("proximo-seta-2").onclick = function() {
   x++;
         if(x==1){
           document.getElementById("anterior-seta-2").style['visibility']=["visible"];
+          
           
         }
        
@@ -615,6 +628,7 @@ document.getElementById("proximo-seta-2").onclick = function() {
     setInterval(function(){ 
       if(x==0){
         document.getElementById("anterior-seta-2").style['visibility']=["hidden"];
+        
       }}, 100);
 
      
@@ -652,7 +666,7 @@ document.getElementById("proximo-seta-2").onclick = function() {
 });
 </script>
 
- 
+
 
 
 

@@ -122,6 +122,9 @@ a{
 nav{
   color: #A7A7A7;
 }
+article{
+  padding: 0 38px;
+}
 
 .clearboth{
   clear: both;
@@ -129,7 +132,7 @@ nav{
 #tarja{
     width: 100%;
     height: 30px;
-    background-color: #000000;
+    background: url('imagens/sony-logo-1.png') no-repeat 99% 50% #000000;
 }
 #tarja-preta-footer{
     width: 100%;
@@ -184,7 +187,7 @@ div#banner{
   background: url(imagens/banner-fifa.png) top no-repeat;
   margin: 30px 0 0 0;
   background-size: 100%;
-  min-height: 400px;  
+  height: 400px;  
   
 }
 
@@ -280,7 +283,7 @@ background-color:#dcdcdc!important;
 /* CAROUSEL */
 
 .carrousel-item{
-  width: 300px!important;
+  width: 300px;
   border-radius: 10px;
   padding: 2px;
 }
@@ -304,9 +307,11 @@ background-color:#dcdcdc!important;
 
 #anterior-seta,#anterior-seta-2{
   margin-right: -10px;
+  background: url(imagens/seta-esquerda.png) 12px 15px no-repeat #0070D1;
 }
 #proximo-seta, #proximo-seta-2{
   margin-left: -10px;
+  background: url('imagens/seta-direita\ \(1\).png') center no-repeat #0070D1;
 }
 .js-carousel--responsive p{
 margin: 0;
@@ -330,12 +335,16 @@ z-index: -1;
 }
 
 /* BANNER 2 */
+div#banner-1{
+  background: url(imagens/fundo-banner.jpg) ;
+  max-height: 410px;
+}
 div#banner-2{
   background: url(imagens/background-banner-2.jpg) right center ;
   max-height: 410px;
 }
 
-div#banner-2 img{
+div#banner-1 img,div#banner-2 img{
 
 margin: 0 0;
 width: 350px;
@@ -386,25 +395,48 @@ footer h5{
   
 @media screen and (max-width:400px) {
   /* MEDIA BANNER 2 */
-  div#banner-2 img {
-    width: 120px!important;
+  div#banner-1 img,div#banner-2 img {
+    width: 120px;
+  }
+  img.carrousel-item{
+    width: 120px;
+    padding: 0;
+  }
+  article{
+    padding: 0 10px;
+  }
+  div.sub-banner-2{
+    height: 180px;
   }
 }
 
 
-@media screen and (max-width: 768px) {
-     /* MEDIA TARJA PRETA TOPO */
+@media screen and (min-widht: 400px) and (max-width: 770px) {
+    /* MEDIA ARTICLE */
+    article{
+      padding: 0 10px;
+    }
+  /* MEDIA TARJA PRETA TOPO */
     div#tarja {
     display: none;
     }
-    /* MEDIA BANNER */
-  div#banner{
-    background-size: 140%;
-    min-height: 200px;
-  }
+    /* MEDIA CAROUSEL */
+    img.carrousel-item{
+      width: 120px;
+      padding: 0;
+    }
+    .glider-slide{
+      min-width: 140px!important;
+    }
+    .carousel-1, .carousel-2, .carousel-3, .carousel-4,.carousel-5, .carousel-6, .carousel-7, .carousel-8, .carousel-9,.carousel-10, .carousel-11, .carousel-12{
+      margin: 0;
+      padding: 0;
+    }
+    
+
 
     /* MEDIA BANNER 2 */
-    div#banner-2 img {
+    div#banner-1 img,div#banner-2 img {
       width: 200px;
     }
 
@@ -435,12 +467,16 @@ footer h5{
    }
   }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width:770px) and (max-width: 900px) {
     div#banner-2 img {
       width: 180px;
     }
   }
-
+@media screen and (min-width:900px) {
+  div.sub-banner{
+    height: 160px;
+  }
+}
 
 
 
