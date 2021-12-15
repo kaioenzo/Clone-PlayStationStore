@@ -408,6 +408,42 @@ footer h5{
   div.sub-banner-2{
     height: 180px;
   }
+  
+  .carousel-1, .carousel-2, .carousel-3, .carousel-4,.carousel-5, .carousel-6, .carousel-7, .carousel-8, .carousel-9,.carousel-10, .carousel-11, .carousel-12{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* footer */
+  footer {
+    padding: 40px 0;
+    font-size: 0.6em;
+  }
+ .footer-logo{
+  margin:0 0;
+  
+ }
+ #logo-footer{
+   display: block;
+   margin: 0 auto
+   ;
+ }
+ #mundo{
+   margin: 25px 20px;
+   display: inline-block;
+  
+ }
+ p{
+  font-size: 14px;
+ }
+ #tarja-preta-footer{
+   display: block;
+ }
+
+  /* MEDIA TARJA PRETA TOPO */
+  div#tarja {
+    display: none;
+    }
 }
 
 
