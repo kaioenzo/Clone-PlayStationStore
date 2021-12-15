@@ -393,7 +393,7 @@ footer h5{
 /* MEDIA QUERIES */
 
   
-@media screen and (max-width:400px) {
+@media screen and (min-widht: 0px) and (max-width:400px) {
   /* MEDIA BANNER 2 */
   div#banner-1 img,div#banner-2 img {
     width: 120px;
@@ -408,7 +408,7 @@ footer h5{
   div.sub-banner-2{
     height: 180px;
   }
-  
+
   .carousel-1, .carousel-2, .carousel-3, .carousel-4,.carousel-5, .carousel-6, .carousel-7, .carousel-8, .carousel-9,.carousel-10, .carousel-11, .carousel-12{
     margin: 0;
     padding: 0;
